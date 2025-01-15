@@ -1,4 +1,3 @@
-// script.js
 const numberInput = document.getElementById("numberInput");
 const generateButton = document.getElementById("generateButton");
 const tableContainer = document.getElementById("tableContainer");
@@ -11,10 +10,8 @@ generateButton.addEventListener("click", () => {
         return;
     }
 
-    // Clear any existing content
     tableContainer.innerHTML = "";
 
-    // Create the multiplication table
     const table = document.createElement("table");
     table.style.width = "100%";
     table.style.borderCollapse = "collapse";
@@ -37,6 +34,5 @@ generateButton.addEventListener("click", () => {
         table.appendChild(row);
     }
 
-    // Add the table to the container
     tableContainer.appendChild(table);
 });
